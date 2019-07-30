@@ -45,6 +45,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
              */
             @Override
             public boolean matches(CharSequence charSequence, String s) {
+
                 return s.equals(DigestUtils.md5DigestAsHex(charSequence.toString().getBytes()));
             }
         });
