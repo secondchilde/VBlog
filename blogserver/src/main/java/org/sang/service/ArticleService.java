@@ -18,6 +18,7 @@ import java.util.List;
 @Service
 @Transactional
 public class ArticleService {
+
     @Autowired
     ArticleMapper articleMapper;
     @Autowired
